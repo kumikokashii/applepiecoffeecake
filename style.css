@@ -1,0 +1,35 @@
+body {
+	margin: 30px 40px;
+	color: #696969;
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+
+.lines {
+	font-size: xxx-large;
+	margin-bottom: 30px;
+	line-height: 1.6;
+	overflow-wrap: break-word;
+}
+
+.fillin {
+	font-weight: normal;
+	display: block;
+	margin-bottom: 11px;
+}
+
+.actions {
+	margin-top: 57px;
+}
+
+.button {
+	background-color: #ececec;
+	font-size: xx-large;
+	font-weight: normal;
+	padding: 20px 40px;
+	border-radius: 47px;
+}
+
+.footer {
+	margin-top: 2041px;
+}
