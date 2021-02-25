@@ -1,0 +1,51 @@
+body {
+	margin: 30px 40px;
+	color: #696969;
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+
+.lines {
+	font-size: xxx-large;
+	margin-bottom: 30px;
+	line-height: 1.6;
+	overflow-wrap: break-word;
+}
+
+.fillin {
+	display: block;
+	margin-bottom: 11px;
+	font-weight: normal;
+}
+
+.line-input {
+	border: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	font-weight: inherit;
+}
+
+.line-input:focus {
+	outline:none !important;
+}
+
+.action {
+	margin-top: 51px;
+}
+
+.button {
+	background-color: #ececec;
+	font-size: xx-large;
+	padding: 20px 40px;
+	border-radius: 47px;
+}
+
+.button:hover {
+	background-color: #fffdd0;
+	cursor: pointer;
+}
+
+.footer {
+	margin-top: 2041px;
+}
