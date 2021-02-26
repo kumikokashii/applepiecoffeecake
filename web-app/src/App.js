@@ -1,26 +1,23 @@
 import './App.css';
-import {questionMap} from './questionMap.js';
 import { useState, Fragment } from 'react';
+import {questionMap} from './questionMap.js';
 
 function App(props) {
   const { questionNum } = props;
-  const [buttonClicked, setButtonClicked] = useState(false);
-
   const questionList = questionMap[questionNum];
-  const blankPositions = [];
-  questionList.forEach((line) => {
+  const blankPositions = questionList.map((line) => {
     const start = line.indexOf("___");
-    blankPositions.push([start, start+2]);
+    return [start, start+2];
   })
 
-  const getInitInputs = () => {
-    let initInputs = {};
-    questionList.forEach((_, i) => {
-      initInputs[i] = "";
-    })
-    return initInputs;
-  }
-  const [inputs, setInputs] = useState(getInitInputs());
+  let initInputs = {};
+  questionList.forEach((_, i) => {
+    initInputs[i] = "";
+  })
+
+  const [inputs, setInputs] = useState(initInputs);
+  const [buttonClicked, setButtonClicked] = useState(false);
+  
   const inputOnChange = (event, i) => {
     let newInputs = {...inputs};
     newInputs[i] = event.target.value;
@@ -39,45 +36,37 @@ function App(props) {
           placeholder="______"
           size={inputs[i].length || 5}
         />
-        {line.substring(blankPositions[i][1]+1, line.length)}<br/>
+        {line.substring(blankPositions[i][1]+1, line.length)}
+        <br/>
       </Fragment>
     )
   )
 
-  const getLines = () => {
-    let output = ""
-    questionList.forEach((line, i) => {
-      output += line.replace("___", inputs[i] || "___");
-      if (i !== questionList.length-1) {
-        output += "\n"
-      }
-    })
-    return output;
-  }
-
   const copyLines = () => {
     setButtonClicked(true);
     setTimeout(() => setButtonClicked(false), 1000);
-    navigator.clipboard.writeText(getLines());
+
+    const lines = questionList.map((line, i) => line.replace("___", inputs[i] || "___")).join("\n");    
+    navigator.clipboard.writeText(lines);
   }
+
+  const copyButtonDOM = (
+    <span 
+      className={"button" + (buttonClicked ? " buttonClicked" : "")}
+      onClick={copyLines}
+    >
+      {buttonClicked ? "copied" : "copy my lines"}
+    </span>
+  )
+
+  const year = new Date().getFullYear();
 
   return (
     <div className="App">
-      <div className="lines">
-        <span className="fillin">Fill in the blank.</span>
-        {questionListDOM}
-      </div>
-      <div className="action">
-        <span 
-          className={"button" + (buttonClicked ? " buttonClicked" : "")}
-          onClick={copyLines}
-        >
-          {buttonClicked ? "copied ^_^ v" : "copy my lines"}
-        </span>
-      </div>
-      <div className="footer">
-        &copy; 2021 Kumiko Kashii
-      </div>
+      <div className="fillin">Fill in the blank.</div>
+      <div className="lines">{questionListDOM}</div>
+      {copyButtonDOM}
+      <div className="footer">&copy; {year} Kumiko Kashii</div>
     </div>
   );
 }
