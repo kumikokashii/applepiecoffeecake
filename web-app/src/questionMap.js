@@ -1,14 +1,14 @@
 export const questionMap = {
   0: [
-    "this is question 0 line 1",
-    "this is question 0 line 2",
-    "this is question 0 line 3",
+    "This is ___.",
+    "Coffee ___ is awesome.",
+    "___ is lalala...",
   ],
 
   1: [
-    "this is question 1 line 1",
-    "this is question 1 line 2",
-    "this is question 1 line 3",
+    'This question 1 is so ___.',
+    'Everyone ___ about that.',
+    'She said, "Tell me ___"',
   ],
 
   2: [

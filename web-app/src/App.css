@@ -46,6 +46,15 @@ body {
 	cursor: pointer;
 }
 
+.buttonClicked {
+  animation: bgcolor 1s infinite;
+}
+
+@keyframes bgcolor {
+  from {background-color: #ffcc00;}
+  to {background-color: #ececec;}
+}
+
 .footer {
 	margin-top: 2041px;
 }
