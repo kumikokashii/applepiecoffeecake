@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/applepiecoffeecake/static/css/main.e6f1a080.chunk.css",
+    "main.css": "/applepiecoffeecake/static/css/main.10df13b0.chunk.css",
     "main.js": "/applepiecoffeecake/static/js/main.97171965.chunk.js",
     "main.js.map": "/applepiecoffeecake/static/js/main.97171965.chunk.js.map",
     "runtime-main.js": "/applepiecoffeecake/static/js/runtime-main.724c3149.js",
@@ -8,13 +8,13 @@
     "static/js/2.a862e4e5.chunk.js": "/applepiecoffeecake/static/js/2.a862e4e5.chunk.js",
     "static/js/2.a862e4e5.chunk.js.map": "/applepiecoffeecake/static/js/2.a862e4e5.chunk.js.map",
     "index.html": "/applepiecoffeecake/index.html",
-    "static/css/main.e6f1a080.chunk.css.map": "/applepiecoffeecake/static/css/main.e6f1a080.chunk.css.map",
+    "static/css/main.10df13b0.chunk.css.map": "/applepiecoffeecake/static/css/main.10df13b0.chunk.css.map",
     "static/js/2.a862e4e5.chunk.js.LICENSE.txt": "/applepiecoffeecake/static/js/2.a862e4e5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.724c3149.js",
     "static/js/2.a862e4e5.chunk.js",
-    "static/css/main.e6f1a080.chunk.css",
+    "static/css/main.10df13b0.chunk.css",
     "static/js/main.97171965.chunk.js"
   ]
 }
