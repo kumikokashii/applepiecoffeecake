@@ -64,7 +64,7 @@ function App(props) {
       <div className="fillin">Fill in the blank.</div>
       <div className="lines">{questionListDOM}</div>
       {copyButtonDOM}
-      <div className="footer">&copy; {year} Testing</div>
+      <div className="footer">&copy; {year} Kumiko Kashii</div>
     </div>
   );
 }
