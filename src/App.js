@@ -33,6 +33,7 @@ function App(props) {
           className="line-input"
           placeholder="______"
           size={inputs[i].length || 5}
+          autocapitalize={blankPositions[i][0] === 0 ? "on" : "none"}
         />
         {line.substring(blankPositions[i][1]+1, line.length)}
         <br/>
