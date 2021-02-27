@@ -69,6 +69,10 @@ body {
     border-radius: 31px;    
   }
 
+  .button:hover {
+    background-color: #ececec;
+  }
+
   .footer {
     font-size: 17px;
   }
