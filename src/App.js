@@ -1,10 +1,8 @@
 import './App.css';
 import { useState, Fragment } from 'react';
-import {questionMap} from './questionMap.js';
 
 function App(props) {
-  const { questionNum } = props;
-  const questionList = questionMap[questionNum];
+  const { questionList } = props;
   const blankPositions = questionList.map((line) => {
     const start = line.indexOf("___");
     return [start, start+2];

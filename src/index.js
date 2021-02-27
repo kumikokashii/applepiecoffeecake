@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import {questionMap} from './questionMap.js';
 
-const getRandomQuestionNumber = () => {
-  return Math.floor(Math.random() * 3);
+const getRandomQuestion = () => {
+  const questionNum = Math.floor(Math.random() * Object.keys(questionMap).length);
+  return questionMap[questionNum]
 }
 
 ReactDOM.render(
-  <App questionNum={getRandomQuestionNumber()} />,
+  <App questionList={getRandomQuestion()} />,
   document.getElementById('root')
 );
