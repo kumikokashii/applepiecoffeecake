@@ -45,7 +45,12 @@ function App(props) {
     setButtonClicked(true);
     setTimeout(() => setButtonClicked(false), 1000);
 
-    const lines = questionList.map((line, i) => line.replace("___", inputs[i] || "___")).join("\n");    
+    const lines = questionList.map((line, i) => {
+      if (inputs[i].length === 0) {
+        return line
+      }
+      return line.replace("___", "*" + inputs[i] + "*")
+    }).join("\n");
     navigator.clipboard.writeText(lines);
   }
 
