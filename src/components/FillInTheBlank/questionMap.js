@@ -143,12 +143,6 @@ export const questionMap = {
     'When I give it a roll on the floor, it makes me wanna say: “___”'
   ],
 
-  23: [
-    'I see a table made of ___.',
-    'Looks like it was set up for people to ___.',
-    'When I lay myself on top of it, it makes me wanna say: “___”'
-  ],
-
   24: [
     'I see a roll of ___.',
     'At the very center is ___.',
@@ -231,6 +225,11 @@ export const questionMap = {
     'The nearest light is coming from ___.',
     'It shines the colors of ___.',
     'Through it all, I hear ___.'
+  ],
+
+  38: [
+    'I see a table made of ___.',
+    'Looks like it was set up for people to ___.',
+    'When I lay myself on top of it, it makes me wanna say: “___”'
   ]
-  
 }

@@ -1,14 +1,16 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import {questionMap} from './questionMap.js';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
-const getRandomQuestion = () => {
-  const questionNum = Math.floor(Math.random() * Object.keys(questionMap).length);
-  return questionMap[questionNum]
-}
+import FillInTheBlank from './components/FillInTheBlank';
+import PickOne from './components/PickOne';
 
-ReactDOM.render(
-  <App questionList={getRandomQuestion()} />,
+ReactDOM.render((
+  <Router>
+    <Switch>
+      <Route exact path="/" component={FillInTheBlank} />
+      <Route exact path="/nice" component={PickOne} />
+      <Redirect to="/" />
+    </Switch>
+  </Router>),
   document.getElementById('root')
 );

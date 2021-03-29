@@ -1,8 +1,14 @@
-import './App.css';
 import { useState, Fragment } from 'react';
+import { questionMap } from './questionMap.js';
+import './style.css';
 
-function App(props) {
-  const { questionList } = props;
+const FillInTheBlank = () => {
+  const getRandomQuestion = () => {
+    const questionNum = Math.floor(Math.random() * Object.keys(questionMap).length);
+    return questionMap[questionNum]
+  }
+  const questionList = getRandomQuestion();
+  
   const blankPositions = questionList.map((line) => {
     const start = line.indexOf("___");
     return [start, start+2];
@@ -66,7 +72,7 @@ function App(props) {
   const year = new Date().getFullYear();
 
   return (
-    <div className="App">
+    <div className="main-fillin">
       <div className="fillin">Fill in the blank.</div>
       <div className="lines">{questionListDOM}</div>
       {copyButtonDOM}
@@ -75,4 +81,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default FillInTheBlank;
