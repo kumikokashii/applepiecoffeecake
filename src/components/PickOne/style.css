@@ -53,3 +53,19 @@ a:hover {
 a:link, a:visited {
   color: #afd8c5 !important;
 }
+
+@media (max-width: 480px) {
+  .reading-image img {
+    height: 210px;
+    border-radius: 20px;
+    max-width: 450px;
+  }
+
+  .reading-text {
+    font-size: 24px;
+  }
+
+  .private-reading {
+    font-size: 21px;
+  }
+}
