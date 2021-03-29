@@ -1,5 +1,10 @@
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .main-pick-one {
-  margin: 30px 40px;
+  padding: 30px 40px;
   color: #afd8c5;
   font-family: sans-serif;
   font-size: 48px;
@@ -9,12 +14,10 @@
 
 .pickone {
   font-weight: 900;
-  text-align: center;
 }
 
 .option {
   padding: 10px;
-  text-align: center;
 }
 
 .option:hover {
@@ -23,25 +26,24 @@
 }
 
 .reading {
-  max-width: 701px;
-  margin: 0 auto 0 auto;
+  max-width: 570px;
+  background-color: #E7F4EF;
+  border-radius: 77px;
 }
 
 .reading-image img {
-  height: 310px;
+  width: 100%;
   border-radius: 30px;
-  max-width: 701px;
 }
 
 .reading-text {
-  margin: 0 50px 0 10px;
   color: #696969;
-  font-size: 32px;
+  font-size: 27px;
   line-height: 1.4;
 }
 
 .private-reading {
-  margin: 30px 50px 0 10px;
+  margin: 20px 0 10px 0;
   font-size: 23px;
   line-height: 1.4;
 }
@@ -55,10 +57,8 @@ a:link, a:visited {
 }
 
 @media (max-width: 480px) {
-  .reading-image img {
-    height: 210px;
-    border-radius: 20px;
-    max-width: 450px;
+  .reading {
+    border-radius: 77px;
   }
 
   .reading-text {

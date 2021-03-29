@@ -21,20 +21,24 @@ const PickOne = () => {
 
   return (
     (pickedNum === -1) ? (
-      <div className="main-pick-one">
-        <div className="pickone">Pick one.</div>
-        <div className="options">{
-          randomNums.map((_, i) => 
-            <div className="option" onClick={()=>setPickedNum(i)}>This one.</div>
-          )}
+      <div className="center-wrapper">
+        <div className="main-pick-one">
+          <div className="pickone">Pick one.</div>
+          <div className="options">{
+            randomNums.map((_, i) => 
+              <div className="option" onClick={()=>setPickedNum(i)}>This one.</div>
+            )}
+          </div>
         </div>
       </div>
     ) : (
-      <div className="main-pick-one reading">
-        <div className="reading-image"><img src={"/readingImages/"+readingMap[pickedNum].image} /></div>
-        <div className="reading-text">{readingMap[pickedNum].text}</div>
-        <div className="private-reading">
-          If you have a specific question, you may benefit from a private reading. If interested, email your question to Kumiko at <a href = "mailto: kumiverse@gmail.com">kumiverse@gmail.com</a> for further information. Please note that the availability is limited, and there is a small but required fee.
+      <div className="center-wrapper">
+        <div className="main-pick-one reading">
+          <div className="reading-image"><img src={"/readingImages/"+readingMap[pickedNum].image} /></div>
+          <div className="reading-text">{readingMap[pickedNum].text}</div>
+          <div className="private-reading">
+            If you have a specific question, you may benefit from a private reading. If interested, email your question to Kumiko at <a href = "mailto: kumiverse@gmail.com">kumiverse@gmail.com</a> for further information. Please note that the availability is limited, and there is a small but required fee.
+          </div>
         </div>
       </div>
     )
