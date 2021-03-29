@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.e61a76b6.chunk.css",
-    "main.js": "/static/js/main.0404e896.chunk.js",
-    "main.js.map": "/static/js/main.0404e896.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.48b0291b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.48b0291b.js.map",
-    "static/js/2.3f4706a9.chunk.js": "/static/js/2.3f4706a9.chunk.js",
-    "static/js/2.3f4706a9.chunk.js.map": "/static/js/2.3f4706a9.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.e61a76b6.chunk.css.map": "/static/css/main.e61a76b6.chunk.css.map",
-    "static/js/2.3f4706a9.chunk.js.LICENSE.txt": "/static/js/2.3f4706a9.chunk.js.LICENSE.txt"
+    "main.css": "/applepiecoffecake/static/css/main.e61a76b6.chunk.css",
+    "main.js": "/applepiecoffecake/static/js/main.0e3a99f4.chunk.js",
+    "main.js.map": "/applepiecoffecake/static/js/main.0e3a99f4.chunk.js.map",
+    "runtime-main.js": "/applepiecoffecake/static/js/runtime-main.be0c02bb.js",
+    "runtime-main.js.map": "/applepiecoffecake/static/js/runtime-main.be0c02bb.js.map",
+    "static/js/2.3f4706a9.chunk.js": "/applepiecoffecake/static/js/2.3f4706a9.chunk.js",
+    "static/js/2.3f4706a9.chunk.js.map": "/applepiecoffecake/static/js/2.3f4706a9.chunk.js.map",
+    "index.html": "/applepiecoffecake/index.html",
+    "static/css/main.e61a76b6.chunk.css.map": "/applepiecoffecake/static/css/main.e61a76b6.chunk.css.map",
+    "static/js/2.3f4706a9.chunk.js.LICENSE.txt": "/applepiecoffecake/static/js/2.3f4706a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.48b0291b.js",
+    "static/js/runtime-main.be0c02bb.js",
     "static/js/2.3f4706a9.chunk.js",
     "static/css/main.e61a76b6.chunk.css",
-    "static/js/main.0404e896.chunk.js"
+    "static/js/main.0e3a99f4.chunk.js"
   ]
 }
