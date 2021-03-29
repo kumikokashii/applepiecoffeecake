@@ -20,7 +20,6 @@
 .option:hover {
   cursor: pointer;
   text-decoration: underline;
-  background-color: #d2ffea97;
 }
 
 .reading {
@@ -43,8 +42,8 @@
 
 .private-reading {
   margin: 30px 50px 0 10px;
-  font-size: 29px;
-  line-height: 1.2;
+  font-size: 23px;
+  line-height: 1.4;
 }
 
 a:hover {
@@ -53,10 +52,4 @@ a:hover {
 
 a:link, a:visited {
   color: #afd8c5 !important;
-}
-
-.footer-pick-one {
-  margin-top: 1003px;
-  color: #696969;
-  font-size: 16px;
 }

@@ -1,16 +1,17 @@
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 import FillInTheBlank from './components/FillInTheBlank';
 import PickOne from './components/PickOne';
+import Footer from './components/Footer';
+
+import './style.css';
 
 ReactDOM.render((
-  <Router basename={process.env.PUBLIC_URL}>
-    <Switch>
-      <Route exact path="/" component={FillInTheBlank} />
-      <Route exact path="/nice" component={PickOne} />
-      <Redirect to="/" />
-    </Switch>
-  </Router>),
+  <div>
+    <div class="index-fillin"><FillInTheBlank /></div>
+    <div class="index-pickone"><PickOne /></div>
+    <div class="index-footer"><Footer /></div>
+  </div>
+  ),
   document.getElementById('root')
 );
