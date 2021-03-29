@@ -5,7 +5,7 @@ import FillInTheBlank from './components/FillInTheBlank';
 import PickOne from './components/PickOne';
 
 ReactDOM.render((
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={FillInTheBlank} />
       <Route exact path="/nice" component={PickOne} />
