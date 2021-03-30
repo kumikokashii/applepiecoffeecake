@@ -9,6 +9,7 @@ const PickOne = () => {
     let nums = [];
     while (nums.length < n) {
       let temp = Math.floor(Math.random() * Object.keys(readingMap).length);
+      console.log('temp is', temp);
       if (!nums.includes(temp)) {
         nums.push(temp);
       }
@@ -25,8 +26,8 @@ const PickOne = () => {
         <div className="main-pick-one">
           <div className="pickone">Pick one.</div>
           <div className="options">{
-            randomNums.map((_, i) => 
-              <div className="option" onClick={()=>setPickedNum(i)}>This one.</div>
+            randomNums.map((readingNum) => 
+              <div className="option" onClick={()=>setPickedNum(readingNum)}>This one.</div>
             )}
           </div>
         </div>
