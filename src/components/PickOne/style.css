@@ -57,6 +57,10 @@ a:link, a:visited {
 }
 
 @media (max-width: 480px) {
+  .main-pick-one {
+    padding: 25px 20px;
+  }
+
   .reading {
     border-radius: 77px;
   }

@@ -8,9 +8,9 @@ import './style.css';
 
 ReactDOM.render((
   <div>
-    <div class="index-fillin"><FillInTheBlank /></div>
-    <div class="index-pickone"><PickOne /></div>
-    <div class="index-footer"><Footer /></div>
+    <div className="index-fillin"><FillInTheBlank /></div>
+    <div className="index-pickone"><PickOne /></div>
+    <div className="index-footer"><Footer /></div>
   </div>
   ),
   document.getElementById('root')

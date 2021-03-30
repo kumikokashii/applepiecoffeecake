@@ -69,8 +69,6 @@ const FillInTheBlank = () => {
     </span>
   )
 
-  const year = new Date().getFullYear();
-
   return (
     <div className="main-fillin">
       <div className="fillin">Fill in the blank.</div>
