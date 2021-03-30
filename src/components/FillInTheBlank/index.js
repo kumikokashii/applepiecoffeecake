@@ -2,13 +2,8 @@ import { useState, Fragment } from 'react';
 import { questionMap } from './questionMap.js';
 import './style.css';
 
-const FillInTheBlank = () => {
-  const getRandomQuestion = () => {
-    const questionNum = Math.floor(Math.random() * Object.keys(questionMap).length);
-    return questionMap[questionNum]
-  }
-  const questionList = getRandomQuestion();
-  
+const FillInTheBlank = (props) => {
+  const { questionList } = props;
   const blankPositions = questionList.map((line) => {
     const start = line.indexOf("___");
     return [start, start+2];
