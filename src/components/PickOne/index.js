@@ -35,7 +35,7 @@ const PickOne = () => {
           <div className="reading-image"><img src={"/readingImages/"+readingMap[pickedNum].image} alt="cards" /></div>
           <div className="reading-text">{readingMap[pickedNum].text}</div>
           <div className="private-reading">
-            If you have a specific question, you may benefit from a private reading. If interested, email your question to Kumiko at <a href = "mailto: kumiverse@gmail.com">kumiverse@gmail.com</a> for further information. Please note that the availability is limited, and there is a small but required fee.
+            You may find personal readings helpful. If interested, message Kumiko at <a href = "mailto: kumiverse@gmail.com">kumiverse@gmail.com</a> for further information. Please note that the availability is limited, and there is a small but required fee.
           </div>
         </div>
       </div>
