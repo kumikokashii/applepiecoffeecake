@@ -15,7 +15,7 @@ const getRandomQuestion = () => {
 ReactDOM.render((
   <div>
     <div className="index-fillin"><FillInTheBlank questionList={getRandomQuestion()} /></div>
-    <div className="index-pickone"><PickOne /></div>
+    {/* <div className="index-pickone"><PickOne /></div> */}
     <div className="index-footer"><Footer /></div>
   </div>
   ),

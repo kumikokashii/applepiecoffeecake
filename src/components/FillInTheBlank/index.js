@@ -1,5 +1,4 @@
 import { useState, Fragment } from 'react';
-import { questionMap } from './questionMap.js';
 import './style.css';
 
 const FillInTheBlank = (props) => {
